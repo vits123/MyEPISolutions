@@ -12,10 +12,11 @@ import java.util.List;
 public class PascalTraingle {
 
   public static List<List<Integer>> generatePascalTriangle(int numRows) {
-    List<List<Integer>> pascalTriangle = new ArrayList<>();
+    List<List<Integer>> pascalTriangle = new ArrayList<>();     // Main List
     for (int i = 0; i < numRows; ++i) {
       List<Integer> curRow = new ArrayList<>();
-      for (int j = 0; j <= i; ++j) {           // Every curRow's 1st to ith entry is calculated by adding previous row's j-1 & jth entry
+      for (int j = 0; j <= i;
+          ++j) {           // Every curRow's 1st to ith entry is calculated by adding previous row's j-1 & jth entry
         curRow.add(
             (0 < j && j < i) ? pascalTriangle.get(i - 1).get(j - 1) + pascalTriangle.get(i - 1)
                 .get(j) : 1);
