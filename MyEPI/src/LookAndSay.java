@@ -1,6 +1,8 @@
 /*
 * @author- Vedant Rahane
 * Look and Say Sequence
+* Time Complexity- O(n2**n)
+
 */
 
 public class LookAndSay {
