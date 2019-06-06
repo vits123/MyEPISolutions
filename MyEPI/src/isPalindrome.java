@@ -1,4 +1,7 @@
 
+
+// Checks whether number is palindrome or not
+
 public class isPalindrome {
 
   private static boolean isNumberPalindrome(int x) {
